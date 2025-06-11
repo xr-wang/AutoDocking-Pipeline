@@ -17,9 +17,9 @@ This tool allows you to automatically dock multiple ligands to a single receptor
 
 ## Requirements
 
-- Python 3.6 or above
-- [AutoDock Vina](http://vina.scripps.edu/) installed and added to PATH
-- Ligands and receptor prepared in PDBQT format
+- Python 3.6+
+- AutoDock Vina installed and accessible via `vina` in command line
+- Ligands and receptor files in `.pdbqt` format
 
 ---
 
@@ -37,4 +37,19 @@ This tool allows you to automatically dock multiple ligands to a single receptor
 ### 2. Run the script
 
 ```bash
-python docking_batch.py
+AutoDocking-Pipeline/
+├── docking_batch.py
+├── README.md
+├── LICENSE
+├── results/               # Output folder
+├── ligands/               # Input ligands
+└── docs/
+    └── usage.md           # User instructions
+
+### 3. Results will be saved in the results/ folder.
+
+## Citation
+
+If you use this pipeline, please cite:
+
+> Wang XR. (2025). *AutoDocking-Pipeline: A Python script for batch molecular docking*. Zenodo. https://doi.org/10.5281/zenodo.15641479
